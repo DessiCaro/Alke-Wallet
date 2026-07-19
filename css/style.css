@@ -1,0 +1,21 @@
+
+/*selector de etiqueta */
+h1 {
+    color:rgb(42, 150, 171);
+    font: size 50px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+
+/* selector de clase */
+.parrafo_estilo_1{
+    color:rgb(35, 14, 60);
+}
+
+.parrafo_estilo_2{
+    color:blue;
+}
+
+p {
+color:red; 
+}
