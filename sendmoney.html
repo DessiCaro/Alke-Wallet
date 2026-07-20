@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Send Money</title>
 </head>
 <body>
@@ -12,14 +12,36 @@
     </header>
 
     <main>
-        <p>lleva Formulario con validacion basica</p>
+        
+        <div>
+        <p>Selecciona un contacto para realizar una transacción.</p>
+        <label for ="contactos">Contactos</label> 
+        <select name" id="">
+        <option value=""selected disabled>Seleccionar</option>
+        <option value="Leonardo Farkas">Leonardo Farkas</option>
+        <option value="Jeff Pezos">Jeff Pezos</option>
+        <option value="Bill Gates">Bill Gates</option>
+        </select>
+        </div>
+
+        <div>
+        <p>Ingresa un monto entre $1 a $1,000,000.- </p>
+        <label for="monto">Monto a Tranferir</label>
+        <input type="number" name="monto" min="1" max="1000000">
+        
+
+
+        </div>
     <section>
 
     </section>
     </main>
 
     <footer>
-        
+    <div class="footer">
+    <p>2026 Alke Wallet</p>
+    <p> Desarrollado para curso DESARROLLO DE APLICACIONES FULLSTACK PYTHON TRAINEE.</p>
+    </div>
     </footer>
 </body>
 </html>
