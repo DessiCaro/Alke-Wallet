@@ -1,11 +1,67 @@
 
+/*Tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/*Universal Reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
 /*selector de etiqueta */
 h1 {
-    color:rgb(42, 150, 171);
-    font: size 50px; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(195, 195, 195);
+    font-family: "Nunito Sans", sans-serif;
 } 
 
+h3 {
+    font-family: "Nunito Sans", sans-serif;
+    color: rgb(12, 12, 82);
+    font-weight: 800;
+}
+
+p {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.caja-boton {
+background-color: rgb(255, 255, 255);
+padding: 10px;
+margin: 10px;
+border: none; 
+height: 50%;
+width: 40%;
+border-radius: 5px;
+}
+
+.caja-texto-seccion {
+background-color: rgb(43, 187, 55);
+padding: 10px;
+margin: 10px;
+border: 10px; 
+height: 50%;
+width: 95%;
+}
+
+.caja-seccion-menu {
+background-image: linear-gradient(to top, lightblue, rgb(90, 123, 255) );
+color: white;
+padding: 1px;
+margin: 50px;
+border: 5px solid rgb(51, 255, 0); 
+}
+
+.footer {
+background-color: rgb(68, 40, 40);
+height: 100px;
+width: 100%;
+}
+
+.parrafo{
+    font-family: "Roboto", sans-serif;
+}
 
 /* selector de clase */
 .parrafo_estilo_1{
@@ -19,3 +75,4 @@ h1 {
 p {
 color:red; 
 }
+
