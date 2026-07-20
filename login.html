@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
     <title>LogIn | Alke Wallet</title>
+<!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Bienvenido al inicio de Sesión</h1>
+        <h1>Bienvenido a Alka Wallet</h1>
     </header>
     <main>
-        <p>Ingrese sus datos para iniciar sesión:</p>
-    <section>
+        <section>
+            <div class="form mb-5">
+                <div>
+                    <p><h3>Ingrese sus datos para iniciar sesión:</h3></p>
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label"> Usuario </label>
+                        <input type="text" name="nombre" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label"> Contraseña </label>
+                        <input type="password" class="form-control" name="clave" id="password">
+                    </div>
+                    <div>
+                        <a href="menu.html">
+                        <button class="btn btn-primary mt-3">Iniciar Sesión</button>
+                        </a>
+                    </div>
 
-    <div> 
-    <form>
-        <label for ="nombre"> Usuario </label>
-        <input type="text" name="nombre">
-    </div>
-    <div>
-        <form>
-        <label for ="password"> Contraseña </label>
-        <input type="password" name="clave" id="password">
-    </div>
-    <div>
-    <button type="button"> Iniciar Sesión </button>
-
-    </div>
-
-        </form>
-    </section>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
-    <div class="footer">
-    <p>2026 Alke Wallet</p>
-    <p> Desarrollado para curso DESARROLLO DE APLICACIONES FULLSTACK PYTHON TRAINEE.</p>
-    </div>
+        <div class="footer">
+            <p>2026 Alke Wallet</p>
+            <p> Desarrollado para curso DESARROLLO DE APLICACIONES FULLSTACK PYTHON TRAINEE.</p>
+        </div>
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
