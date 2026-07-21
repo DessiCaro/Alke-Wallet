@@ -19,6 +19,12 @@ h1, h2, h3, h4, h5 ,h6 {
     font-family: "Nunito Sans", sans-serif;
 }
 
+p{
+font-family: "Nunito Sans", sans-serif;
+color: rgb(35, 35, 35);
+
+}
+
 .btn-primary{
     background: rgb(134, 97, 255);
     border: none;
@@ -36,12 +42,29 @@ h1, h2, h3, h4, h5 ,h6 {
     border: none;
 }
 
+
+.contenedor-main-menu-1{
+justify-content: center;
+background-color: rgb(36, 56, 184);
+
+}
+
+.contenedor-main-menu-2{
+background-color: rgb(167, 207, 23);
+padding: 10px;
+margin: 10px;
+border: 2px; 
+border-radius: 5px;
+width: 30%;
+}
+
 /* header */
 
 header h1{
     text-align: center;
     font-size: bold;
 }
+
 
 /* main */
 main{
@@ -59,14 +82,10 @@ main .form div button {
     width: 100%;
 }
 
-
 /* footer */
-footer p {
-    text-align: center;
-    color: rgba(16, 0, 39, 0.29);
-}
 
 .footer {
+    text-align: center;
     background-color: white;
     margin: 0px;
 }
