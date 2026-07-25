@@ -12,82 +12,83 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="menu.html">Alke Wallet</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="deposit.html">Dépositar</a>
-                    </ul>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="sendmoney.html">Envíar Dinero</a>
-                    </ul>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="transactions.html">Historial
-                                Transacciones</a>
-                    </ul>
-
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <h1>Alke Wallet</h1>
-    </header>
-
+<!--Nav - INICIO -->
+<div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                    <use xlink:href="#bootstrap"></use>
+                </svg> <span class="fs-4">Alke Wallet ||</span> </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="menu.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="deposit.html" class="nav-link">Dépositar</a></li>
+                <li class="nav-item"><a href="sendmoney.html" class="nav-link">Envíar Dinero</a></li>
+                <li class="nav-item"><a href="transactions.html" class="nav-link">Transacciones</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contactos</a></li>
+            </ul>
+        </header>
+</div>
+<!--Nav - FIN-->
     <main>
-        <section> 
-        <div>
-            <h3>Bienvenido al menú de Alke Wallet. </h3>
-            <h4> ¿Qué desea realizar hoy? </h4>
+        <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">
+                <h3>Bienvenido a Alke Wallet. </h3>
         </div>
-        </section>
-                <section> 
-                <div class="card" style="width: 16rem;"> <!--Dépositos-->
-                    <img src="assets/img/img-deposit.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Dépositos</h5>
-                        <p class="card-text">Deposite dinero en su cuenta.</p>
-                        <a href="deposit.html" class="btn btn-primary">Depositar</a>
+<!--Feature - INICIO -->
+        <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">¿Qué deseas realizar hoy?</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+<!--Feature 1 depositar-->
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#toggles2"></use>
+                        </svg> </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Dépositar dinero</h3>
+                        <p>Deposite dinero en su cuenta.</p> 
+                        <!--Boton--> 
+                        <a href="deposit.html"class="btn btn-primary">¡Vamos allá!</a>
                     </div>
                 </div>
-
-                <div class="card" style="width: 16rem;"> <!--Enviar Dinero-->
-                    <img src="assets/img/img-sendmoney.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Envíar dinero</h5>
-                        <p class="card-text">Envíe dinero a cuentas bancarias de sus contactos.</p>
-                        <a href="sendmoney.html" class="btn btn-primary">Enviar Dinero</a>
+<!--Feature 2 enviar dinero-->
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#cpu-fill"></use>
+                        </svg> </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Envíar dinero</h3>
+                        <p>Envíe dinero a cuentas bancarias de sus contactos.</p> 
+                        <!--Boton--> 
+                        <a href="sendmoney.html" class="btn btn-primary">¡Vamos allá!</a>
                     </div>
-        </div>
-
-            <div class="card" style="width: 16rem;"> <!--Historial Transacciones-->
-                <img src="assets/img/img-transactions.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Historial de trasancciones</h5>
-                    <p class="card-text">Revise el historial de transacciones bancarias realizadas en su cuenta.</p>
-                    <a href="transactions.html" class="btn btn-primary">Historial Transacciones</a>
+                </div>
+<!--Feature 3 transacciones-->
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#tools"></use>
+                        </svg> </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Transacciones</h3>
+                        <p>Revise el historial de transacciones bancarias realizadas en su cuenta.</p> 
+                            <!--Boton--> 
+                            <a href="transactions.html" class="btn btn-primary">¡Vamos allá!</a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+<!--Feature - FIN -->
 
-
-
-    </main>
-
+    <!--Footer-->
     <div class="container">
         <footer class="py-3 my-4">
-            <p class="text-center text-body-secondary">2026 Alke Wallet || Desarrollo de aplicaciones fullstack python trainee </p>
+            <p class="text-center text-body-secondary">2026 Alke Wallet || Desarrollo de aplicaciones fullstack python
+                trainee </p>
         </footer>
     </div>
 </body>
