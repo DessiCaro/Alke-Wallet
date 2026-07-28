@@ -56,3 +56,45 @@ btnRegistrar.addEventListener("click", function(){
 })
 
 renderUsuarios();
+
+document.getElementById("form-login").addEventListener("submit", function(event){
+    event.preventDefault();
+
+    const usuario = document.getElementById("nombre").value;
+    const password = document.getElementById("password").value; 
+
+    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+    const usuarioEncontrado =  usuarios.find(function(user){
+        return user.usuario === usuarios && user.password === password;
+    })
+
+    if (usuarioEncontrado) {
+        localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioEncontrado))
+
+        document.getElementById("mensaje").innerHTML =`
+        
+            <div class="alert alert-success alert-dismissible fade show" role = "alert> 
+            Inicio de sesión exitoso.  
+            <button type="button" class="btn-close" data-bs-dismiss="alert"> </button>
+            </div>
+        `;
+
+        setTimeout(() =>{
+            window.location.href = "menu.html";}, 3000);
+    } 
+    else {
+        document.getElementById("mensaje").innerHTML =`
+        
+            <div class="alert alert-success alert-dismissible fade show" role = "alert> 
+            Usuario y/o Contraseña Incorrectos.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"> </button>
+            </div>
+        `;
+        setTimeout(() =>{
+            document.getElementById("mensaje").innerHTML = "";}, 3000);
+    }
+
+})
+
+
